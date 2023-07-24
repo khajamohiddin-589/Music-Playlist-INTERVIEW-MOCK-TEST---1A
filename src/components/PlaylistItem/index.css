@@ -48,3 +48,10 @@
   width: 20px;
   cursor: pointer;
 }
+.button {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}

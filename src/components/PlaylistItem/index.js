@@ -11,15 +11,26 @@ const PlaylistItem = props => {
   return (
     <li className="item">
       <div className="start">
-        <img src={imageUrl} className="img-style" alt={name} />
+        <img src={imageUrl} className="img-style" alt="track" />
         <div className="inner-details">
-          <h1 className="details-heading">{name}</h1>
+          <p className="details-heading">{name}</p>
           <p className="details-para">{genre}</p>
         </div>
       </div>
       <div className="end">
-        <h1 className="time">{duration}</h1>
-        <AiOutlineDelete onClick={onClickDelete} className="icon-inner" />
+        <p className="time">{duration}</p>
+        <button
+          type="button"
+          data-testid="delete"
+          className="button"
+          onClick={onClickDelete}
+        >
+          <AiOutlineDelete
+            data-testid="delete"
+            onClick={onClickDelete}
+            className="icon-inner"
+          />
+        </button>
       </div>
     </li>
   )

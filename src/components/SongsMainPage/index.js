@@ -126,7 +126,7 @@ class SongsMainPage extends Component {
         </div>
       </div>
 
-      <h1 className="playlist-heading">No Songs Found</h1>
+      <p className="playlist-heading">No Songs Found</p>
     </div>
   )
 
@@ -167,7 +167,7 @@ class SongsMainPage extends Component {
         <div className="header-container">
           <div className="details">
             <h1 className="heading">Ed Sheeran</h1>
-            <h1 className="para">Singer</h1>
+            <p className="para">Singer</p>
           </div>
         </div>
         {condition ? this.renderEmptyView() : this.renderPlayListView()}
